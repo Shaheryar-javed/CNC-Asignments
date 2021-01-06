@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>For Loop Function Asignment</h1>
+
+<script>
+
+// table print using for loop function
+
+var num = 2;
+
+for(var i = 0; i <= 20; i++){
+     if(i==20){
+       continue;
+     }
+     console.log(num +" x "+i+ " = "+(num * i));
+
+     document.write(num +" x "+i+ " =  "+(num * i)+ "<br />")
+}
+
+"<br />"
+"<br />"
+
+// user input value table print
+
+var table = prompt("Please Enter the Input for table Print");
+
+
+for(var i = 0 ; i <= 10; i++){
+  if (i == 10){
+    continue;
+  }
+  console.log(table + "   x   " + i + "   =  "+ (table * i));
+
+ document.write(table + "   x   " + i + "   =  "+ (table * i)+ "<br />"+ "<br />");
+}
+</script>
+
+</body>
+</html>
