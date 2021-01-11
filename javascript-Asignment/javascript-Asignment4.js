@@ -10,7 +10,7 @@ var a = 2;
 // var b = --a;
 // alert (b);
 
-
+// increasment & decreasment
 var b = a--;
 alert(b)
 
