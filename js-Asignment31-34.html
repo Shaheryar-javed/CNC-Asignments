@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="n">
+     
+         
+     
+    </div>
+
+    <script>
+   
+   var name = prompt("please Enter your name")
+  var date = prompt('please Enter your birth Date')
+  var month = prompt('please Enter the birth  month')
+  var year = prompt('please Enter the year of birth')
+
+var time = new Date()
+var newTime = time.toLocaleTimeString()
+
+    var intro = `hello  ${name} good afternoon `;
+    console.log(intro)
+    var birthDate = `your DOB is  ${date}/${month}/${year} in pakistan standrad time ${newTime}`
+    console.log(birthDate)
+
+
+
+    var bdd = new Date('04/12/1991')
+    var ttd = new Date('02/07/2021')
+
+    var cbd = ttd.getTime() - bdd.getTime()
+  
+console.log(cbd)
+
+    var innumber = cbd/ (1000*3600*24)
+
+    console.log(innumber)
+
+ var totalYear = innumber / 365
+  console.log (totalYear)
+
+  var fixAge = totalYear.toFixed(2)
+
+  
+
+  var helloShari = `hi shari  your age is  ${fixAge} `
+
+  console.log(helloShari)
+
+
+
+    </script>
+</body>
+</html>

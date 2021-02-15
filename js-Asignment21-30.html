@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Js Asignment 21 to 30</h1>
+
+    <script>
+
+        //how to print the the specific latter or world using slice method from anywhere of the paragraph
+
+var dumyText = "this is the dumy text"
+var newDumy = dumyText.slice(0, 4);
+alert(newDumy)
+document.write(newDumy)
+var text = ""
+for(var i = dumyText.length - 1; i >= 0 ; i--){
+     text += dumyText[i]
+}
+console.log(text)
+document.write(text)
+
+var reversValue = text.slice(17, 21)
+
+alert(reversValue)
+document.write(reversValue)
+
+
+//how  to print the user input & how to print the the first latter Capital
+   
+   var userInput = prompt("Please Enter the Text")
+   
+   var f_capital_latter_sample = userInput.charAt(0).toUpperCase();
+
+   alert(f_capital_latter_sample);
+
+   function CapitalLatter (){
+      return userInput.charAt(0).toUpperCase() + userInput.slice(1)
+   }
+  alert( userInput.CapitalLatter())
+   </script>
+</body>
+</html>
